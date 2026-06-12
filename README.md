@@ -25,10 +25,12 @@ secrets:
 ---
 
 <!-- Badges -->
+[![GitHub Stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat-square)](https://github.com/NousResearch/hermes-agent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![HF Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue?style=flat-square)](https://huggingface.co/spaces)
+[![Hermes](https://img.shields.io/badge/Hermes-Agent-indigo?style=flat-square)](https://github.com/NousResearch/hermes-agent)
 
-**Self-hosted Hermes AI agent gateway for Hugging Face Spaces.** HuggingMes runs Hermes Agent on HuggingFace Spaces, giving you a 24/7 personal AI assistant with a management dashboard, persistent HF Dataset backup, and automatic connectivity fixes for blocked outbound traffic. HuggingMes directly wires the startup providers listed below, and it can also use Hermes providers configured through `hermes model` or `config.yaml`.
+**Self-hosted Hermes AI agent gateway for Hugging Face Spaces.** HuggingMes runs [Nous Research Hermes Agent](https://github.com/NousResearch/hermes-agent) on HuggingFace Spaces, giving you a 24/7 personal AI assistant with a management dashboard, persistent HF Dataset backup, and automatic connectivity fixes for blocked outbound traffic. HuggingMes directly wires the startup providers listed below, and it can also use Hermes providers configured through `hermes model` or `config.yaml`.
 
 ## Table of Contents
 
@@ -47,6 +49,7 @@ secrets:
 - [💻 Terminal Access (JupyterLab)](#-terminal-access-jupyterlab)
 - [🏗️ Architecture](#-architecture)
 - [🐛 Troubleshooting](#-troubleshooting)
+- [🌟 More Projects](#-more-projects)
 
 ## ✨ Features
 
@@ -71,7 +74,7 @@ Watch a quick walkthrough on YouTube: [Deploying HuggingMes on HF Spaces](https:
 
 ### Step 1: Duplicate this Space
 
-[![Duplicate this Space](https://huggingface.co/datasets/huggingface/badges/resolve/main/duplicate-this-space-xl.svg)](https://huggingface.co/spaces)
+[![Duplicate this Space](https://huggingface.co/datasets/huggingface/badges/resolve/main/duplicate-this-space-xl.svg)](https://huggingface.co/spaces/somratpro/HuggingMes?duplicate=true)
 
 ### Step 2: Add Your Secrets
 
@@ -301,5 +304,17 @@ docker compose up --build
 - **Provider not showing up:** If it is a Hermes-native provider, run `hermes model` and complete the provider-specific setup there. If it is a custom endpoint, verify the `base_url` exposes `/v1/models` or `/v1/chat/completions`.
 - **Space keeps sleeping:** Add `CLOUDFLARE_WORKERS_TOKEN` to enable automatic keep-awake monitoring.
 
+## 🌟 More Projects
+
+Similar projects by [@somratpro](https://github.com/somratpro) — all free, one-click deploy on HF Spaces:
+
+| Project | What it runs | HF Space | GitHub |
+| :--- | :--- | :--- | :--- |
+| **HuggingFlow** | DeerFlow — deep research agent | [Space](https://huggingface.co/spaces/somratpro/HuggingFlow) | [Repo](https://github.com/somratpro/HuggingFlow) |
+| **Hugging8n** | n8n — workflow & automation platform | [Space](https://huggingface.co/spaces/somratpro/Hugging8n) | [Repo](https://github.com/somratpro/hugging8n) |
+| **HuggingClaw** | OpenClaw — Claude Code in the browser | [Space](https://huggingface.co/spaces/somratpro/HuggingClaw) | [Repo](https://github.com/somratpro/huggingclaw) |
+| **HuggingClip** | Paperclip — AI agent orchestration platform | [Space](https://huggingface.co/spaces/somratpro/HuggingClip) | [Repo](https://github.com/somratpro/huggingclip) |
+| **HuggingPost** | Postiz — social-media scheduler | [Space](https://huggingface.co/spaces/somratpro/HuggingPost) | [Repo](https://github.com/somratpro/huggingpost) |
+
 ---
-*Made with ❤️ by [@technicalboy2023](https://github.com/technicalboy2023)
+*Made with ❤️ by [@somratpro](https://github.com/somratpro)*
